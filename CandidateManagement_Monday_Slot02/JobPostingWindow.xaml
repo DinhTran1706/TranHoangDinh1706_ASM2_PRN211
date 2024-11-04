@@ -1,0 +1,29 @@
+﻿<Window x:Class="CandidateManagement_Monday_Slot02.JobPostingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CandidateManagement_Monday_Slot02"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded_Job"
+        Title="JobPostingWindow" Height="700" Width="914" WindowStartupLocation="CenterScreen"
+        Background="#FF899FF4">
+        
+    <Grid>
+        <Label Content="JOB POSTING MANAGEMENT" HorizontalAlignment="Left" Height="50" Margin="250,21,0,0" VerticalAlignment="Top" Width="434" FontSize="30" FontWeight="Bold"/>
+        <Label Content="Posting ID" HorizontalAlignment="Left" Height="30" Margin="23,80,0,0" VerticalAlignment="Top" Width="99" FontSize="18"/>
+        <Label Content="Job Posting Title" HorizontalAlignment="Left" Height="40" Margin="23,116,0,0" VerticalAlignment="Top" Width="163" FontSize="18"/>
+        <Label Content="Description" HorizontalAlignment="Left" Height="36" Margin="508,76,0,0" VerticalAlignment="Top" Width="134" FontSize="18"/>
+        <TextBox x:Name="txtPostID" HorizontalAlignment="Left" Height="27" Margin="142,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" FontSize="18"/>
+        <TextBox x:Name="txtTitle" HorizontalAlignment="Left" Height="46" Margin="23,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="434" FontSize="18"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Height="122" Margin="508,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="382" FontSize="18"/>
+        <DataGrid x:Name="dgJobPosting" HorizontalAlignment="Center" Height="238" Margin="0,267,0,0" VerticalAlignment="Top" Width="867" FontSize="15" SelectionChanged="dgJobPosting_SelectionChanged"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Height="68" Margin="26,521,0,0" VerticalAlignment="Top" Width="193" Background="#FF38DF10" FontWeight="Bold" FontSize="20" Click="btnAdd_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Height="68" Margin="224,521,0,0" VerticalAlignment="Top" Width="212" Background="#FFC2E30E" FontWeight="Bold" FontSize="20" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Height="68" Margin="441,521,0,0" VerticalAlignment="Top" Width="227" FontWeight="Bold" Background="#FFE0B611" FontSize="20" Click="btnDelete_Click"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="68" Margin="673,521,0,0" VerticalAlignment="Top" Width="217" FontWeight="Bold" Background="#FF0ADFDF" FontSize="20" Click="btnClose_Click"/>
+        <Label Content="Posted Date" HorizontalAlignment="Left" Height="33" Margin="26,218,0,0" VerticalAlignment="Top" Width="111" FontSize="18"/>
+        <DatePicker x:Name="dpDate" HorizontalAlignment="Left" Height="33" Margin="142,218,0,0" VerticalAlignment="Top" Width="315" FontSize="18"/>
+        <Button x:Name="btnCandidateProfile" Content="Return to Candidate Profile Window" HorizontalAlignment="Left" Height="58" Margin="532,616,0,0" VerticalAlignment="Top" Width="358" Click="btnCandidateProfile_Click" FontSize="20" FontWeight="Bold" Background="#FFED58E9"/>
+    </Grid>
+</Window>
